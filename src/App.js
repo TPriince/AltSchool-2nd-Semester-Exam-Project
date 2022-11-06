@@ -24,7 +24,7 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <title>TPrrince's GitHub Portfolio App</title>
+        <title>TPriince's GitHub Portfolio App</title>
         <meta name="description" content="Very effective application" />
       </Helmet>
       <Layout />

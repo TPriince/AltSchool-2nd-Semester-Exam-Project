@@ -10,9 +10,10 @@ export default function TestErrorBoundary({name}) {
   }
   return(
     <div className="error-header">
-      <h4>Countdown to zero!</h4>
+      <h2>Test Error Boundary</h2>
+      <h5>Countdown to zero!</h5>
       <h3>{value}</h3>
-      <button onClick={handleCount} className="error-btn">Click</button>
+      <button onClick={handleCount} className="error-btn">Click here</button>
     </div>
   )
 }
