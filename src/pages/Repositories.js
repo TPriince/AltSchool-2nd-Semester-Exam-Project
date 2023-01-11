@@ -32,9 +32,7 @@ export default function Repositories() {
 
   const repos = user.slice(skip, skip + PER_PAGE).map((repo, index) => {
     return(
-      <ul key={index}>
-        <li><NavLink className="link" style={{color: "blue"}} to={`/repos/${repo.name}`}>{`${index + 1}: ${repo.name}`}</NavLink></li>
-      </ul>
+        <li key={index}><NavLink className="link" style={{color: "blue"}} to={`/repos/${repo.name}`}>{`${index + 1}: ${repo.name}`}</NavLink></li>
     )
   })
 
@@ -45,7 +43,7 @@ export default function Repositories() {
   return(
     <div className="home">
       <h2>My GitHub repositories:</h2>
-      <div className="repolist">{repos}</div>
+      <ul className="repolist">{repos}</ul>
 
       <button disabled={page <= 1} onClick={() => setPage(page - 1)}>prev</button>
       <p className="pagination">Pages: {page} of {pages}</p>
